@@ -12,6 +12,38 @@ body {
     line-height: 1.6;
 }
 
+/* Estilos para las hojas */
+.hoja-esquina {
+    position: absolute;
+    opacity: 0;
+    transition: opacity 1s ease-in-out, transform 1s ease-in-out;
+    z-index: 3;
+}
+
+.hoja-inferior-izquierda {
+    bottom: -100px;
+    left: -100px;
+    transform: scale(0.5) rotate(-30deg);
+}
+
+.hoja-superior-derecha {
+    top: -100px;
+    right: -100px;
+    transform: scale(0.5) rotate(30deg);
+}
+
+.hoja-esquina.visible {
+    opacity: 1;
+    transform: scale(1) rotate(0deg);
+}
+
+.hoja-esquina.pequena {
+    transform: scale(0.8);
+    transition: transform 1s ease-in-out;
+}
+
+/* Resto de tus estilos existentes */
+
 .header-image {
     position: relative;
     width: 100%;

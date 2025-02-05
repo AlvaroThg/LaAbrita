@@ -21,8 +21,33 @@
                     </ul>
                 </nav>
             </div>
+            <!-- Imágenes de hojas -->
+            <img src="../images/hoja1.png" alt="Hoja 1" class="hoja-esquina hoja-inferior-izquierda">
+            <img src="../images/hoja2.png" alt="Hoja 2" class="hoja-esquina hoja-superior-derecha">
         </div>
     </header>
 </body>
 </html>
+<script>
+    window.addEventListener("scroll", function() {
+        let hojas = document.querySelectorAll(".hoja-esquina");
+        let screenHeight = window.innerHeight;
 
+        hojas.forEach(function(hoja) {
+            let position = hoja.getBoundingClientRect().top;
+            if (position < screenHeight - 100) {
+                hoja.classList.add("visible");
+
+                // Aplicar el efecto después de 2 segundos
+                setTimeout(() => {
+                    hoja.classList.add("pequena");
+
+                    // Volver a hacer el efecto de florecer después de 1 segundo
+                    setTimeout(() => {
+                        hoja.classList.remove("pequena");
+                    }, 1000);
+                }, 2000);
+            }
+        });
+    });
+</script>
