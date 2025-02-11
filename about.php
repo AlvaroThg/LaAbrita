@@ -4,90 +4,60 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Acerca de Nosotros - Zonoba</title>
+    <title>Sobre Nosotros - La Abrita</title>
     
     <link rel="stylesheet" href="css/styles.css">
     <link rel="stylesheet" href="css/styles-aboutUs.css">
 </head>
 <body>
     <main>
-        <!-- Sección del carrusel -->
-        <section class="banner" style="background-image: url('/images/banner.png');">
-            <div class="banner-text">
-                <h1>Descubre tu próximo hogar con Zonoba</h1>
-            </div>
-        </section>
-
-         <!-- Sección cuadro-info1 -->
-        <section class="cuadro-info1" id="cuadro-info1">
-            <div class="cuadro-img">
-                <img src="/images/property3.jpg" alt="Empresa">
-            </div>
-            <div class="cuadro-texto">
-                <h3>Sobre Nosotros</h3>
-                <p>En Zonoba Inmobiliaria, nos especializamos en convertir oportunidades en realidades, Con un enfoque innovador y transparente, ofrecemos soluciones integrales en la compra, venta y alquiler de propiedades, Nuestra prioridad es brindar a cada cliente un servicio personalizado, basado en confianza, profesionalismo y conocimiento del mercado, asegurando que cada inversión sea segura y rentable.</p>
-            </div>
-        </section>
-        
-        <!-- Sección cuadro-info2 -->
-        <section class="cuadro-info2" id="cuadro-info2" style="display: flex; flex-direction: row-reverse; text-align: right;">
-            <div class="cuadro-img">
-                <img src="/images/property3.jpg" alt="Empresa">
-            </div>
-            <div class="cuadro-texto">
-                <h3>Misión</h3>
-                <p>Facilitar el acceso a propiedades ideales para cada persona, garantizando asesoramiento experto y procesos eficientes, nos esforzamos por ofrecer soluciones inmobiliarias innovadoras, seguras y adaptadas a las necesidades del mercado, siempre con un compromiso inquebrantable con la transparencia y la satisfacción del cliente.</p>
-            </div>
-        </section>
-        
-        <!-- Sección cuadro-info3 -->
-        <section class="cuadro-info3" id="cuadro-info3">
-            <div class="cuadro-img">
-                <img src="/images/property3.jpg" alt="Empresa">
-            </div>
-            <div class="cuadro-texto">
-                <h3>Visión</h3>
-                <p>Ser la inmobiliaria líder en el sector, reconocida por nuestra integridad, eficiencia e innovación, aspiramos a transformar la experiencia de compra, venta y alquiler de bienes raíces, creando un impacto positivo en la vida de nuestros clientes y en el desarrollo del mercado inmobiliario.</p>
-            </div>
-        </section>
-        
-        <!-- Sección cuadro-info4 -->
-        <section class="cuadro-info4" id="cuadro-info4" style="display: flex; flex-direction: row-reverse; text-align: right;">
-                <div class="cuadro-img">
-                    <img src="/images/property3.jpg" alt="Empresa">
+        <section class="about-us">
+            <div class="container">
+                <h1>Sobre Nosotros</h1>
+                <div class="about-us-wrapper">
+                    <div class="about-us-content">
+                        <p>Bienvenidos a <strong>La Abrita</strong>, un refugio natural alejado del bullicio de la ciudad, diseñado para quienes desean reconectar con la naturaleza y encontrar paz y tranquilidad.</p>
+                        <p>Ubicada en un entorno privilegiado, nuestra finca ofrece un espacio único donde el aire puro, el canto de los pájaros y el verdor de los árboles se combinan para brindar una experiencia inigualable.</p>
+                    </div>
+                    <div class="image-container">
+                        <img src="/images/abritaLugar1.png" alt="Imagen1 Abrita" class="about-us-img">
+                    </div>
                 </div>
-                <div class="cuadro-texto">
-                    <h3>Compromiso</h3>
-                    <p>En Zonoba Inmobiliaria, nuestro compromiso es brindar un servicio excepcional basado en honestidad, profesionalismo y atención personalizada. Nos dedicamos a generar confianza en cada transacción, asegurando procesos claros, ágiles y seguros para que nuestros clientes tomen decisiones con tranquilidad y respaldo total.</p>
-                </div>
-            </section>
-        </main>
-
-        <!-- Sección "Por qué elegirnos" -->
-        <section class="why-choose-us">
-            <h2>¿Por qué elegir Zonoba?</h2>
-            <p>En Zonova nos comprometemos a ofrecerte la mejor experiencia para encontrar la propiedad ideal. Nos destacamos por:</p>
-            <ul>
-                <li>Atención personalizada con expertos en bienes raíces.</li>
-                <li>Amplia variedad de propiedades disponibles.</li>
-                <li>Soporte integral desde la búsqueda hasta el cierre de la compra o alquiler.</li>
-            </ul>
+            </div>
         </section>
 
-        <!-- Sección "Ofrecemos" -->
-        <section class="what-we-offer">
-            <h2>Ofrecemos</h2>
-            <ul>
-                <li>Asesoramiento personalizado para compra, venta y alquiler de propiedades.</li>
-                <li>Conexión con los mejores agentes inmobiliarios del mercado.</li>
-                <li>Plataforma digital intuitiva para simplificar tu búsqueda.</li>
-            </ul>
+        <section class="our-mission">
+            <div class="container">
+                <h2>Nuestra Misión</h2>
+                <div class="our-mission-content">
+                    <p>En <strong>La Abrita</strong>, nos esforzamos por ofrecer un entorno acogedor donde las personas puedan disfrutar de la naturaleza, relajarse y participar en actividades que promuevan el bienestar y la armonía con el medio ambiente.</p>
+                </div>
+                <div class="image-container-mission">
+                    <img src="/images/abritaLugar2.png" alt="Imagen Misión" class="our-mission-img">
+                </div>
+            </div>
+        </section>
+
+        <section class="our-values">
+            <div class="container">
+                <h2>Nuestros Valores</h2>
+                <div class="our-values-content">
+                    <ul>
+                        <p><strong>Conexión con la Naturaleza:</strong> Fomentamos el respeto y la admiración por el entorno natural.</p>
+                        <p><strong>Bienestar y Relajación:</strong> Buscamos brindar un espacio para el descanso y la tranquilidad.</p>
+                        <p><strong>Sostenibilidad:</strong> Implementamos prácticas ecológicas para preservar nuestro entorno.</p>
+                    </ul>
+                </div>
+                <div class="image-container-values">
+                    <img src="/images/abritaImg1.png" alt="Imagen Valores" class="our-values-img">
+                </div>
+            </div>
         </section>
     </main>
-    <?php include 'includes/footer.php'; ?>
 </body>
 </html>
 
+<?php include 'includes/footer.php'; ?>
 
 <script>
     window.addEventListener('scroll', function() {

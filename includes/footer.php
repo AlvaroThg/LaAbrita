@@ -1,14 +1,14 @@
 <footer class="footer">
     <div class="footer-container">
         <div class="footer-about">
-            <h3>Sobre Zonova</h3>
-            <p>Zonova es tu inmobiliaria confiable para encontrar la propiedad perfecta. Tu satisfacción es nuestra prioridad.</p>
+            <h3>Sobre La Abrita</h3>
+            <p>Un refugio natural lejos del ruido de la ciudad. Conéctate con la naturaleza y encuentra la paz en nuestra finca.</p>
         </div>
         <div class="footer-contact">
             <h3>Contacto</h3>
-            <p>Email: contacto@zonova.com</p>
+            <p>Email: contacto@laabrita.com</p>
             <p>Teléfono: +591 71234567</p>
-            <p>Dirección: Calle Ejemplo #123, Tarija, Bolivia</p>
+            <p>Ubicación: En las montañas, Bolivia</p>
         </div>
         <div class="footer-social">
             <h3>Síguenos</h3>
@@ -18,6 +18,7 @@
         </div>
     </div>
     <div class="footer-bottom">
-        <p>© 2025 Zonova - Todos los derechos reservados.</p>
+        <p>© 2025 La Abrita - Todos los derechos reservados.</p>
     </div>
 </footer>
+
