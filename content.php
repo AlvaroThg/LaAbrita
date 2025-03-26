@@ -13,76 +13,158 @@
     <section class="contents">
         <div class="content large">
             <div class="content-info">
-                <img src="/images/abritaImg1.png" alt="Vino">
-                <h3>Vino</h3>
-                <p>Sabor Frambuesa/Uva.</p>
+                <img src="/images/arandauva.jpg" alt="Arandauva">
+                <h3>ArandaUva</h3>
+                <p onclick="window.location.href='https://wa.link/50zrjm'" style="cursor: pointer;">
+                    Jugo sabor Arandano y Uva.
+                </p>
 
             </div>
         </div>
         <div class="content medium">
             <div class="content-info">
-                <img src="/images/abritaImg1.png" alt="Mermelada">
-                <h3>Mermelada</h3>
-                <p>Sabor Mora Azul.</p>
+                <img src="/images/frambuva.jpg" alt="Frambuva">
+                <h3>FrambUva</h3>
+                <p onclick="window.location.href='https://wa.link/50zrjm'" style="cursor: pointer;">
+                    Jugo sabor Frambuesa y Uva.
+                </p>
      
             </div>
         </div>
         <div class="content small">
             <div class="content-info">
-                <img src="/images/abritaImg1.png" alt="Uva">
-                <h3>Uva</h3>
-                <p>Venta a por mayor.</p>
+                <img src="/images/izan.jpg" alt="Izan">
+                <h3>Izan</h3>
+                <p onclick="window.location.href='https://wa.link/50zrjm'" style="cursor: pointer;">
+                    Jugo sabor Noni, Arandano, Uva y Frutos del Bosque.
+                </p>
  
             </div>
         </div>
+
+        <div class="content medium">
+            <div class="content-info">
+                <img src="/images/maracuya.jpg" alt="Maracuya">
+                <h3>Maracuya</h3>
+                <p onclick="window.location.href='https://wa.link/50zrjm'" style="cursor: pointer;">
+                    Jugo de Maracuya.
+                </p>
+
+            </div>
+        </div>
+
+        <div class="content medium">
+            <div class="content-info">
+                <img src="/images/monterrico.jpg" alt="Monterrico">
+                <h3>Monterrico</h3>
+                <p onclick="window.location.href='https://wa.link/50zrjm'" style="cursor: pointer;">
+                    Jugo de Uva Negra.
+                </p>
+
+            </div>
+        </div>
+
         <div class="content large">
             <div class="content-info">
-                <img src="/images/abritaImg1.png" alt="Taller de Autosuficiencia">
-                <h3>Taller de Autosuficiencia</h3>
-                <p>Aprende a cultivar frutas y verduras, y a cocinar lo que cosechas.</p>
+                <img src="/images/brandy.jpg" alt="Brandy">
+                <h3>Brandy</h3>
+                <p onclick="window.location.href='https://wa.link/50zrjm'" style="cursor: pointer;">
+                    Licor añejado en Roble francés.
+                </p>
 
             </div>
         </div>
         <div class="content medium">
             <div class="content-info">
-                <img src="/images/abritaImg1.png" alt="Hospedaje">
-                <h3>Hospedaje</h3>
-                <p>Espacioso y comodo.</p>
+                <img src="/images/duch.jpg" alt="Duch">
+                <h3>Duch Rostlin</h3>
+                <p onclick="window.location.href='https://wa.link/50zrjm'" style="cursor: pointer;">
+                    Licor Botánico Reposado
+                </p>
 
             </div>
         </div>
         <div class="content small">
             <div class="content-info">
-                <img src="/images/abritaImg1.png" alt="Local Comercial">
-                <h3>EJ1</h3>
-                <p>Ubicación.</p>
+                <img src="/images/empirico.jpg" alt="Empirico">
+                <h3>Empírico</h3>
+                <p onclick="window.location.href='https://wa.link/50zrjm'" style="cursor: pointer;">
+                    Licor de Uva.
+                </p>
 
             </div>
         </div>
         <div class="content large">
             <div class="content-info">
-                <img src="/images/abritaImg1.png" alt="Penthouse de Lujo">
-                <h3>Ej2</h3>
-                <p>Vistas panorámicas.</p>
+                <img src="/images/juanoller.jpg" alt="Juan Oller">
+                <h3>Juan Oller</h3>
+                <p onclick="window.location.href='https://wa.link/50zrjm'" style="cursor: pointer;">
+                    Licor de Uva (Tannat).
+                </p>
 
             </div>
         </div>
         <div class="content medium">
             <div class="content-info">
-                <img src="/images/abritaImg1.png" alt="Apartamento Familiar">
-                <h3>Ej3</h3>
-                <p>Amplio y cómodo.</p>
+                <img src="/images/picaflor.jpg" alt="Picaflor">
+                <h3>Picaflor</h3>
+                <p onclick="window.location.href='https://wa.link/50zrjm'" style="cursor: pointer;">
+                    Licor de Uva.
+                </p>
 
             </div>
         </div>
         <div class="content small">
             <div class="content-info">
-                <img src="/images/abritaImg1.png" alt="Bodega Industrial">
-                <h3>Ej4</h3>
-                <p>Espacio ideal para almacenamiento.</p>
+                <img src="/images/pisco.jpg" alt="Pisco">
+                <h3>Pisco</h3>
+                <p onclick="window.location.href='https://wa.link/50zrjm'" style="cursor: pointer;">
+                    Licor destilado de Uva Monterrico
+                </p>
 
             </div>
         </div>
+        <div class="content large">
+            <div class="content-info">
+                <img src="/images/santusa.jpg" alt="Santusa">
+                <h3>Doña Santusa</h3>
+                <p onclick="window.location.href='https://wa.link/50zrjm'" style="cursor: pointer;">
+                    Licor Bivarietal de Uva  (Tannat/Monterrico).
+                </p>
+
+            </div>
+        </div>
+        <div class="content medium">
+            <div class="content-info">
+                <img src="/images/victoria.jpg" alt="Victoria">
+                <h3>Victoria</h3>
+                <p onclick="window.location.href='https://wa.link/50zrjm'" style="cursor: pointer;">
+                    Singani de Uva Moscatel.
+                </p>
+
+            </div>
+        </div>
+        <div class="content small">
+            <div class="content-info">
+                <img src="/images/vinagre_arandano.jpg" alt="Vinagre de ArandanoUva">
+                <h3>Vinagre Arandano Uva</h3>
+                <p onclick="window.location.href='https://wa.link/50zrjm'" style="cursor: pointer;">
+                    Vinagre de Arandano y Uva.
+                </p>
+
+            </div>
+        </div>
+        <div class="content large">
+            <div class="content-info">
+                <img src="/images/vinagre_manzana.jpg" alt="Vinagre de Manzana">
+                <h3>Vinagre Manzana</h3>
+                <p onclick="window.location.href='https://wa.link/50zrjm'" style="cursor: pointer;">
+                    Vinagre de Manzana.
+                </p>
+
+            </div>
+        </div>
+
     </section>
     <?php include 'includes/footer.php'; ?>
 </body>

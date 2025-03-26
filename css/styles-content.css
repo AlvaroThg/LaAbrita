@@ -1,34 +1,13 @@
-/* -------------------------------- */
-/* Estilos para la galería tipo collage */
-/* -------------------------------- */
-
+/* Estilos para la galería tipo collage (mobile-first) */
 .contents {
     display: grid;
     gap: 15px;
-    padding: 50px 5%;
-    grid-template-columns: repeat(4, 1fr);
-    grid-template-rows: auto;
-    grid-template-areas: 
-        "a a b c"
-        "d e b f"
-        "d g h f"
-        "i g j k";
+    padding: 30px 5%;
+    grid-template-columns: 1fr;  /* Una sola columna por defecto */
+    grid-auto-rows: auto;
 }
 
-/* Asignación de áreas */
-.content:nth-child(1) { grid-area: a; }
-.content:nth-child(2) { grid-area: b; }
-.content:nth-child(3) { grid-area: c; }
-.content:nth-child(4) { grid-area: d; }
-.content:nth-child(5) { grid-area: e; }
-.content:nth-child(6) { grid-area: f; }
-.content:nth-child(7) { grid-area: g; }
-.content:nth-child(8) { grid-area: h; }
-.content:nth-child(9) { grid-area: i; }
-.content:nth-child(10) { grid-area: j; }
-.content:nth-child(11) { grid-area: k; }
-
-/* Estilos generales de los cuadros */
+/* Asignación de áreas: se ignoran para mobile, ya que es una columna única */
 .content {
     background: white;
     border-radius: 10px;
@@ -39,65 +18,39 @@
     flex-direction: column;
     align-items: center;
     justify-content: center;
+    margin: 0 auto;
 }
 
 .content:hover {
-    transform: scale(1.05);
-    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3);
+    transform: scale(1.02);
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.2);
 }
 
-/* Ajustes para imágenes más grandes */
+/* Imágenes e información */
 .content img {
     width: 100%;
-    height: 100%;
+    height: auto;
     object-fit: cover;
 }
 
-/* Información de cada contenido */
 .content-info {
-    padding: 15px;
+    padding: 10px;
     text-align: center;
 }
 
 .content-info h3 {
-    font-size: 22px;
+    font-size: 18px;
     font-weight: bold;
     margin-bottom: 5px;
 }
 
 .content-info p {
-    font-size: 18px;
+    font-size: 16px;
 }
 
-
-/* Diseño responsive */
-@media (max-width: 900px) {
+/* Opcional: estilos para pantallas más grandes */
+@media (min-width: 601px) {
     .contents {
         grid-template-columns: repeat(2, 1fr);
-        grid-template-areas: 
-            "a b"
-            "c d"
-            "e f"
-            "g h"
-            "i j"
-            "k k";
-    }
-}
-
-@media (max-width: 600px) {
-    .contents {
-        grid-template-columns: 1fr;
-        grid-template-areas: 
-            "a"
-            "b"
-            "c"
-            "d"
-            "e"
-            "f"
-            "g"
-            "h"
-            "i"
-            "j"
-            "k";
     }
 }

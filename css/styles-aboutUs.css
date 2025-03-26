@@ -6,124 +6,81 @@ body {
     color: #333;
 }
 
+/* Ajuste del contenedor para móviles */
 .container {
-    width: 80%;
-    height: 900px;
-    max-width: 1400px;
-    margin: 40px auto;
-    padding: 40px;
+    width: 90%;
+    margin: 20px auto;
+    padding: 20px;
     background: #ffffff;
     border-radius: 10px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    position: relative;
+}
+
+/* Títulos se muestran en bloque y con tamaño adecuado */
+h1, h2 {
+    font-family: 'Georgia', serif;
+    color: #2c5e1a;
+    text-align: center;
+    margin-bottom: 20px;
 }
 
 h1 {
-    font-family: 'Georgia', serif;
-    color: #2c5e1a;
-    position: absolute;
-    top: 20px; /* Ajuste en Y */
-    left: 40px; /* Ajuste en X */
-    font-size: 90px; /* Tamaño del título */
+    font-size: 2.5rem;
 }
 
-
-.about-us {
-    position: relative;
-    padding-top: 50px; /* Espacio superior para mover el contenido más arriba */
+h2 {
+    font-size: 2rem;
 }
 
+/* Se quita el posicionamiento absoluto para que el texto fluya en móvil */
 .about-us-wrapper {
-    display: flex; /* Activa Flexbox */
-    align-items: flex-start; /* Alinea los elementos al inicio (arriba) */
-    gap: 40px; /* Espacio entre el texto y la imagen */
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
 }
 
 .about-us-content {
-    position: relative; /* Permite mover el elemento con top */
     text-align: justify;
-    width: 55%; /* Ancho del texto */       
-    font-size: 40px; /* Tamaño del texto */
-    line-height: 1.6; /* Espaciado entre líneas */
-    top: 80px; /* Ajusta la posición en Y */
+    font-size: 16px;
+    line-height: 1.5;
 }
 
-.about-us-content p:first-child {
-    margin-bottom: 30px; /* Separación de 10px entre los dos textos */
-}
-
+/* Imagen adaptada */
 .image-container {
-    width: 40%; /* Ancho del contenedor de la imagen */
-    background: #4c864c; /* Fondo para la imagen */
+    width: 100%;
+    background: #4c864c;
     border-radius: 10px;
-    box-shadow: 0 4px 8px rgba(54, 109, 61, 0.822); /* Sombra para el contenedor */
-    padding: 10px; /* Espacio interno para el diseño */
+    box-shadow: 0 4px 8px rgba(54, 109, 61, 0.8);
+    padding: 10px;
     display: flex;
     align-items: center;
     justify-content: center;
 }
 
 .about-us-img {
-    width: 100%; /* La imagen ocupa el 100% del contenedor */
-    height: 700px; /* Altura fija para la imagen */
-    object-fit: cover; /* Asegura que la imagen cubra el espacio sin distorsionarse */
-    border-radius: 10px; /* Bordes redondeados */
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+    border-radius: 10px;
 }
 
-/* ------ */
-
-h2 {
-    font-family: 'Georgia', serif;
-    color: #2c5e1a;
-    position: absolute;
-    top: 20px; /* Ajuste en Y */
-    left: 40px; /* Ajuste en X */
-    font-size: 80px; /* Tamaño del título */
-}
-
+/* Secciones de misión y valores en columna */
 .our-mission, .our-values {
-    position: relative;
-    padding-top: 50px;
+    padding-top: 20px;
 }
 
-.our-mission .container, .our-values .container {
-    display: flex;
-    align-items: flex-start;
-    gap: 40px;
-    flex-direction: row;
-}
-
-.our-mission-content {
-    position: relative;
+.our-mission-content, .our-values-content {
     text-align: justify;
-    width: 55%;
-    font-size: 40px;
-    line-height: 1.6;
-    top: 120px;
+    font-size: 16px;
+    line-height: 1.5;
 }
 
-.our-values-content {
-    position: relative;
-    text-align: justify;
-    width: 55%;
-    font-size: 40px;
-    line-height: 1.6;
-    top: 140px;
-}
-
-
-.our-mission-content p, .our-values-content ul {
-    margin-bottom: 30px;
-}
-
+/* Imagenes misión y valores adaptadas */
 .image-container-mission, .image-container-values {
-    width: 40%;
+    width: 100%;
     background: #4c864c;
     border-radius: 10px;
-    box-shadow: 0 4px 8px rgba(54, 109, 61, 0.822);
+    box-shadow: 0 4px 8px rgba(54, 109, 61, 0.8);
     padding: 10px;
     display: flex;
     align-items: center;
@@ -132,25 +89,31 @@ h2 {
 
 .our-mission-img, .our-values-img {
     width: 100%;
-    height: 700px;
+    height: auto;
     object-fit: cover;
     border-radius: 10px;
 }
 
-.image-grid {
-    display: flex;
-    justify-content: center;
-    gap: 15px;
-    flex-wrap: wrap;
-}
+/* Opcional: en pantallas medianas se puede mostrar en dos columnas */
+@media (min-width: 601px) {
+    .about-us-wrapper {
+        flex-direction: row;
+    }
+    .about-us-content {
+        width: 55%;
+    }
+    .image-container {
+        width: 40%;
+    }
 
-.image-grid img {
-    width: 30%;
-    border-radius: 10px;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-    transition: transform 0.3s ease;
-}
-
-.image-grid img:hover {
-    transform: scale(1.05);
+    .our-mission, .our-values {
+        display: flex;
+        gap: 20px;
+    }
+    .our-mission-content, .our-values-content {
+        width: 55%;
+    }
+    .image-container-mission, .image-container-values {
+        width: 40%;
+    }
 }

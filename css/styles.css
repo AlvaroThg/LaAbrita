@@ -12,34 +12,11 @@ body {
     line-height: 1.6;
 }
 
-
 /* ---- HEADER ---- */
-
-/* ---- Estilos para el logo ---- */
-.logo {
-    max-width: 700px; /* Ajusta el tamaño según sea necesario */
-    height: auto; /* Mantiene la proporción de la imagen */
-    margin-top: 150px; /* Mueve el logo 150px hacia abajo */
-    margin-bottom: 0;
-    position: relative; /* Necesario para posicionar .luna de manera absoluta */
-}
-
-.luna {
-    max-width: 30px;
-    height: 30px;
-    position: absolute; /* Posiciona .luna respecto a .logo */
-    top: 150px; /* Alinea .luna en la parte superior de .logo */
-    left: 468px; /* Coloca .luna 20px a la derecha de .logo */
-    opacity: 0; /* Inicialmente invisible */
-    transform: rotate(-10deg); /* Estado inicial con rotación */
-    animation: fadeInAndRotate 1.5s ease-in-out forwards; /* Aplica la animación */
-    animation-delay: 1s; /* Retrasa la animación 0.5s después de cargar la página */
-}
-
 header {
     position: relative;
     width: 100%;
-    height: 80vh;
+    height: 50vh;  /* Reducido para móviles */
     background: url('../images/header-bg.jpg') center/cover no-repeat;
     display: flex;
     align-items: center;
@@ -53,6 +30,7 @@ header {
     width: 100%;
     height: 100%;
     display: flex;
+    flex-direction: column;  /* Apilamos elementos en vertical */
     align-items: center;
     justify-content: center;
 }
@@ -61,118 +39,101 @@ header {
     position: absolute;
     width: 100%;
     height: 100%;
-    background: rgba(255, 255, 255);
+    background: rgba(255, 255, 255, 0.3);
 }
 
 .header-content {
     position: relative;
     z-index: 2;
+    width: 90%;
 }
 
-.header-content h1 {
-    font-size: 3rem;
+/* Logo adaptado */
+.logo {
+    width: 80%;
+    max-width: 300px;
+    margin: 0 auto;
+    display: block;
+}
+
+/* Ajuste de la imagen 'luna' */
+.luna {
+    width: 25px;
+    height: 25px;
+    position: relative;
+    margin: 10px auto;
+    opacity: 0;
+    transform: rotate(-10deg);
+    animation: fadeInAndRotate 1.5s ease-in-out forwards;
+    animation-delay: 1s;
+}
+
+/* Navegación: se muestran los links en columna */
+.nav-links-container {
+    margin-top: 15px;
+}
+
+.nav-links {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    list-style: none;
+    align-items: center;
+}
+
+.nav-links a {
+    font-size: 16px;
+    text-decoration: none;
+    color: #000;
     font-weight: bold;
-    text-transform: uppercase;
-    margin: 0;
-    color: #D8572C;
+    padding: 8px 15px;
+    transition: color 0.3s ease-in-out;
 }
 
-.header-content p {
-    font-size: 1.5rem;
-    margin-top: 10px;
-    color: #ffffff;
+.nav-links a::before {
+    content: '';
+    display: block;
+    height: 2px;
+    background-color: #D8572C;
+    margin-bottom: 3px;
+    width: 0;
+    transition: width 0.3s ease-in-out;
+}
+
+.nav-links a:hover::before {
+    width: 100%;
 }
 
 /* Animación de fade-in */
 @keyframes fadeInAndRotate {
     from {
-        opacity: 0; /* Comienza completamente transparente */
-        transform: rotate(-10deg); /* Comienza con una rotación de -10 grados */
+        opacity: 0;
+        transform: rotate(-10deg);
     }
     to {
-        opacity: 1; /* Termina completamente visible */
-        transform: rotate(0deg); /* Termina sin rotación (0 grados) */
+        opacity: 1;
+        transform: rotate(0deg);
     }
 }
 
-/* ---- Estilos de navegación ---- */
-.nav-links-container {
-    flex: 1;
-    display: flex;
-    justify-content: center;
-}
-
-.nav-links {
-    display: flex;
-    gap: 40px;
-    list-style: none;
-    margin: 0;
-    padding: 0;
-}
-
-.nav-links a {
-    font-size: 18px;
-    text-decoration: none;
-    color: #000; /* Color del texto por defecto */
-    font-weight: bold;
-    padding: 10px 20px;
-    position: relative;
-    transition: color 0.3s ease-in-out; /* Transición para el color del texto */
-}
-
-.nav-links a::before {
-    content: '';
-    position: absolute;
-    bottom: 0;
-    left: 50%; /* Comienza desde el centro */
-    width: 0; /* Inicialmente sin ancho */
-    height: 2px;
-    background-color: #D8572C; /* Color de la línea */
-    transition: width 0.3s ease-in-out, left 0.3s ease-in-out; /* Anima el ancho y la posición */
-    transform: translateX(-50%); /* Centra el pseudo-elemento */
-}
-
-.nav-links a:hover {
-    color: #D8572C; /* Color del texto al hacer hover */
-}
-
-.nav-links a:hover::before {
-    width: 100%; /* Expande la línea a todo el ancho */
-    left: 0; /* Mueve el inicio de la línea al lado izquierdo */
-    transform: translateX(0); /* Elimina el centrado */
-}
-
-/* Animación de contracción cuando el mouse sale */
-.nav-links a::before {
-    transition: width 0.3s ease-in-out, left 0.3s ease-in-out, transform 0.3s ease-in-out; /* Asegura transiciones suaves */
-}
-
-.nav-links a:not(:hover)::before {
-    width: 0; /* Contraer la línea */
-    left: 50%; /* Volver al centro */
-    transform: translateX(-50%); /* Centrar nuevamente */
-}
-
-/* ----  ---- */
-
-/* Footer */
+/* ---- FOOTER ---- */
 .footer {
     background: #3a7747;
     color: white;
     text-align: center;
-    padding: 40px 20px;
+    padding: 30px 10px;
     margin-top: 20px;
 }
 
 .footer h3 {
-    font-size: 20px;
-    margin-bottom: 15px;
+    font-size: 18px;
+    margin-bottom: 10px;
 }
 
 .footer-social a img {
-    width: 30px;
-    height: 30px;
-    margin: 0 10px;
+    width: 25px;
+    height: 25px;
+    margin: 0 5px;
     transition: transform 0.3s;
 }
 
